@@ -1,0 +1,11 @@
+﻿@using WebAPP.Models;
+@model List<Product>
+
+
+@{
+    foreach (Product item in Model)
+    {
+        <p>@item.ProductID</p>
+        <p>@item.ProductName</p>
+    }
+}
